@@ -32,7 +32,3 @@ while not endOfTheGame:
     if '_' not in chosenWordList:
         endOfTheGame=True
         print(stages.you_win)
-        # print('You Win!')
-# print(chosenWordList)
-
-# chosenWordList.find(letter)

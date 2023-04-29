@@ -4,6 +4,7 @@ print('Welcome to the Secret Auction Program')
 new='yes'
 biddersData=[]
 # def theSecretAuction(name,bid):
+biggestBid=0
 while new=='yes':
     name=input('Enter your name: ')
     # bid=input('What is your bid?: ')
@@ -17,6 +18,10 @@ while new=='yes':
         'Bid':'$'+str(bid)
     }
     biddersData.append(newData)
+    for biggestBid in biddersData:
+        if biddersData[bid]>biggestBid:
+            biggestBid=biddersData[biggestBid]
+        
 # def theSecretAuction(name,bid):
 #     while new=='yes':
 #         name=input('Enter your name: ')
@@ -35,4 +40,6 @@ while new=='yes':
 # name=input('Enter your name: ')
 # bid=int(input('What is your bid?: $'))
 # theSecretAuction(name,bid)
-print(biddersData)
+print(f'{name} is the winner with bid of &{bid}')
+
+

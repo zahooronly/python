@@ -14,14 +14,15 @@ def guessTheNumber():
         Args:
             n (int): takes an argument so that it can provide input to the loop.
         """
-        if (n-i)>=0:
-                    print(f"Guessed wrong! You have {n-i} chances remaining...")
-                    if userInput<randomNumber:
-                        print('Your Guess is too small!')
-                    elif userInput>randomNumber:
-                        print('Your Guess is too High!')
-                    else:
-                        print('You lose!\nYou have no more chances to guess :(')
+        if (n-(i+1))>=0:
+            if userInput<randomNumber:
+                print(f"Guessed wrong! You have {n-(i+1)} chances remaining...")
+                print('Your Guess is too small!')
+            elif userInput>randomNumber:
+                print(f"Guessed wrong! You have {n-(i+1)} chances remaining...")
+                print('Your Guess is too High!')
+        elif (n-(i+1)<0):
+            print('You lose!\nYou have no more chances to guess :(')
     gameLevel=input("Want to play 'Easy' or 'Hard' level Game? ").lower()
     if gameLevel=='easy':
         print('You have 10 chances to Guess.')

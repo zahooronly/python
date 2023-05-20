@@ -17,17 +17,17 @@ def guessTheNumber():
                     elif userInput>randomNumber:
                         print('Your Guess is too High!')
                     else:
-                        print('You lose!')
+                        print('You lose!\nYou have no more chances to guess :(')
     gameLevel=input("Want to play 'Easy' or 'Hard' level Game? ").lower()
     if gameLevel=='easy':
         print('You have 10 chances to Guess.')
-        for i in range(9):
+        for i in range(10):
             userInput=int(input('Enter a number: '))
             if userInput==randomNumber:
                 print(f'You Win!\nYou Guessed the right Number which is {randomNumber}')
                 break
             else:
-                notGuessedRight(9)
+                notGuessedRight(10)
 
     elif gameLevel=='hard':
         print('You have 5 chances to Guess.')
@@ -38,14 +38,6 @@ def guessTheNumber():
                 print(f'You Win!\nYou Guessed the right Number which is {randomNumber}')
                 break
             else:
-                # if (4-i)>=0:
-                #     print(f"Guessed wrong! You have {4-i} chances remaining...")
-                #     if userInput<randomNumber:
-                #         print('Your Guess is too small!')
-                #     elif userInput>randomNumber:
-                #         print('Your Guess is too High!')
-                # else:
-                #     print('You lose!')
-                notGuessedRight(4)
+                notGuessedRight(5)
 guessTheNumber()
 

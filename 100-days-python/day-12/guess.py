@@ -8,8 +8,20 @@ def guessTheNumber():
     This function auto generates a number between 1-100,
     takes input from user and then checks if user has guess right or not.
     """
+    def guessRight():
+        """
+        DocString of this function:
+        _summary_:
+            This function executes when user has guess right!
+        """
+    
     
     def notGuessedRight(n):
+        """_summary_
+            If user has guess wrong. So what else he can do? This function is to help the user to guess right
+        Args:
+            n (int): takes an argument so that it can provide input to the loop.
+        """
         if (n-i)>=0:
                     print(f"Guessed wrong! You have {n-i} chances remaining...")
                     if userInput<randomNumber:
@@ -28,7 +40,6 @@ def guessTheNumber():
                 break
             else:
                 notGuessedRight(10)
-
     elif gameLevel=='hard':
         print('You have 5 chances to Guess.')
         for i in range(4):
@@ -38,5 +49,8 @@ def guessTheNumber():
                 break
             else:
                 notGuessedRight(5)
+    else:
+        print('Please Enter a valid argument!')
+        guessTheNumber()
 guessTheNumber()
 

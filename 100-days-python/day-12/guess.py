@@ -34,7 +34,6 @@ def guessTheNumber():
         for i in range(4):
             userInput=int(input('Enter a number: '))
             if userInput==randomNumber:
-                # print('You Win!')
                 print(f'You Win!\nYou Guessed the right Number which is {randomNumber}')
                 break
             else:

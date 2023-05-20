@@ -8,14 +8,6 @@ def guessTheNumber():
     This function auto generates a number between 1-100,
     takes input from user and then checks if user has guess right or not.
     """
-    def guessRight():
-        """
-        DocString of this function:
-        _summary_:
-            This function executes when user has guess right!
-        """
-    
-    
     def notGuessedRight(n):
         """_summary_
             If user has guess wrong. So what else he can do? This function is to help the user to guess right

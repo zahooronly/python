@@ -39,6 +39,7 @@ names = [
 myTable=PrettyTable()
 myTable.add_column('AG Numbers',AGNumbers)
 myTable.add_column('Names',names)
+myTable.align='l'
 print(myTable)
 
 # just practice here!

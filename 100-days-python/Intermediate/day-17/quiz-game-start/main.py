@@ -10,6 +10,5 @@ for question in questionData:
     questionBank.append(newQuestion)
 
 
-print(questionBank[0].text)
 quiz=quizbrain.QuizBrain(questionBank)
 quiz.nextQuestion()

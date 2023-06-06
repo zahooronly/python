@@ -11,4 +11,10 @@ for question in questionData:
 
 
 quiz=quizbrain.QuizBrain(questionBank)
-quiz.nextQuestion()
+
+while quiz.stillQuestions():
+    quiz.nextQuestion()
+    print(" ")
+    
+print("You've completed the quiz!")
+print(f"Your Score is: {quiz.score}/{quiz.questionNo}")

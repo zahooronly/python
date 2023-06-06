@@ -1,1 +1,2 @@
-quizBrain
+while True:
+#     quiz.nextQuestion()

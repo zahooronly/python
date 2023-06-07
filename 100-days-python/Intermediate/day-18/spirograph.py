@@ -11,13 +11,13 @@ def randomColor():
     return random_color
 
 # tom.pensize(10)
-def spiralGraph(gap):
+def spiroGraph(gap):
     for _ in range(int(360/gap)):
         tom.speed("fastest")
         tom.circle(100)
         tom.color(randomColor())
         tom.setheading(tom.heading()+gap)
 
-spiralGraph(10)
+spiroGraph(10)
 screen= tl.Screen()
 screen.exitonclick()

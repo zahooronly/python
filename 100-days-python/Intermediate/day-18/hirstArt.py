@@ -12,7 +12,6 @@ def randomColor():
 tom.speed("fastest")
 tom.penup()
 tom.color("white")
-
 tom.setheading(225)
 tom.forward(300)
 tom.setheading(0)

@@ -11,9 +11,9 @@ def randomColor():
     return random_color
 
 
-tom.shape("arrow")
-colors=["dark blue","yellow","teal","dark cyan","aquamarine","magenta","red","green"]
-color=["CornflowerBlue","DarkOrchid","IndianRed","DeepSkyBlue","wheat","SlateGray","SeaGreen"]
+# tom.shape("arrow")
+# colors=["dark blue","yellow","teal","dark cyan","aquamarine","magenta","red","green"]
+# color=["CornflowerBlue","DarkOrchid","IndianRed","DeepSkyBlue","wheat","SlateGray","SeaGreen"]
 directions=[0,90,180,270]
 tom.pensize(15)
 for _ in range(50):

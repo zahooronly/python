@@ -10,7 +10,7 @@ def randomColor():
     random_color=(r,g,b)
     return random_color
 
-# tom.pensize(10)
+
 def spiroGraph(gap):
     for _ in range(int(360/gap)):
         tom.speed("fastest")
